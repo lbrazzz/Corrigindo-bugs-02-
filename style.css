@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+body {
+  min-height: 100vh; /*Em vez de height: 100vh; foi declarado min-height: 100vh; - supondo que não houvesse inserção de mais conteúdo no body a altura seria no minimo a mesma do dispositivo e caso aumentasse o conteúdo do body a altura do body se adptaria conforme o seu conteúdo ja existente e adicionado(s)*/
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+}
+
+.page {
+  width: 1008px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.page nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.page nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  font-family: 'Mulish', sans-serif;
+}
+
+.page nav ul a {
+  font-size: 18px;
+  color: #1f1534;
+
+  opacity: 0.5;
+}
+
+.page nav ul li a:hover {
+  font-weight: 700;
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text h1 {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 56px;
+  color: #000000;
+
+  margin-bottom: 40px;
+}
+
+.text h1 span {
+  color: #89c5cc;
+  font-weight: 700;
+}
+
+.text p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+
+  width: 381px;
+  margin-bottom: 40px;
+}
+
+.text button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 16px 32px;
+  background: #69b99d;
+  border-radius: 4px;
+
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: #f9f9f9;
+  text-transform: uppercase;
+}
+
+.text button:hover {
+  background: #58a389;
+}
+
+.page footer {
+  margin-top: 82px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.page footer a {
+  color: inherit;
+  font-weight: 700;
+}
+
+.page footer a:hover {
+  color: #58a389;
+}
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Mulish', sans-serif;
+*/
+body > #balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
